@@ -1,0 +1,119 @@
+// @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap.css'); 
+
+$color-gold:  goldenrod ;
+$color-dark:  rgb(41, 39, 39) ;
+$color-star:  rgb(248, 248, 23);
+$color-nav: rgb(67, 64, 121);
+$color-nav-light: rgb(185, 178, 216);
+
+
+html{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+ 
+ }
+ 
+ body{
+
+   color: whitesmoke;
+   padding: 0;
+   margin: 0;
+   // font-family: 'Koulen', cursive;
+   min-height: 100vh;
+ }
+
+ a,a:visited, a:active{
+    text-decoration: none;
+ }
+ 
+ .App{
+    background: $color-dark;
+    min-height: 100vh;
+
+    .Home{
+
+      height: 90vh;
+      width: 100%;
+    
+      background: 
+         url('https://st2.depositphotos.com/1020618/9728/i/950/depositphotos_97283226-stock-photo-home-made-burgers-with-fire.jpg')
+         no-repeat  ;
+
+      background-position: center;
+      background-size: cover;
+    }
+ }
+
+
+
+ .meals-cards{
+    margin: 1rem 2rem;
+    padding: .5rem;
+
+   display: flex;
+   gap: 1rem;
+   flex-flow: wrap;
+   list-style: none;
+
+   background: $color-dark;
+
+ 
+   .meals-item{
+      flex-basis: 2rem;
+      flex: 100px 250px 100;
+      padding: 1rem;
+      background: $color-gold;
+
+      color: red !important;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center
+
+     
+   }
+ }
+
+
+
+@import "Navigation";
+@import "Category";
+@import "SingleMeal";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

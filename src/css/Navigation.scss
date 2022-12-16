@@ -1,0 +1,62 @@
+.Navigation{
+
+    display: flex;
+
+    background-color: $color-nav;
+
+    .active{
+  
+
+        &:active > .list-item{
+        }
+    }
+
+    .x{
+        color: darkgray;
+        text-shadow: 5px 5px black, -5px 5px black;
+        margin-left: 90%;
+        z-index: 10;
+        display: none;
+        cursor: pointer;
+
+        @media (max-width: 750px){
+            display: block;
+
+        }
+
+    }
+    .dis-none{
+        @media (max-width: 750px){
+            display: none !important;
+        }
+    }
+
+    .list-item{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items:flex-end;
+        margin-right: 100px;
+        
+        @media (max-width: 750px) {
+            background-color: none;
+            flex-flow: column;
+            position: absolute;
+            right: 20px;
+            visibility: visible;
+        }
+        .items{
+
+            text-decoration: none;
+
+            background-color: $color-nav-light;
+            box-shadow: .3rem .3rem #ccc ;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+      
+
+    }
+}

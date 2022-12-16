@@ -1,0 +1,54 @@
+.SingleMeal{
+
+    margin: 0 100px;
+    padding: 100px 0;
+
+    h1{
+        color: $color-gold;
+    }
+
+    img{
+        max-width: 400px;
+        margin: 50px auto;
+        border-radius: 40px;
+        border: 2px solid;
+        filter: blur(5px);
+        transition: all 1s ease-in-out .2s;
+
+        transform: translate(150%);
+
+        @media (max-width: 750px) {
+            transform: translate(0,0);
+        }
+
+        &:hover, &:active{
+            filter: blur(0);
+            transform: scale(1.5);
+            transform: translate(100%);
+
+            @media (max-width: 750px) {
+                transform: translate(0,0);
+            }
+
+        }
+
+    }
+
+    .para-container{
+
+        background-color: rgb(110, 108, 108,.3);
+        padding: 1rem 1.8rem;
+        border-radius: 5px;
+        cursor: not-allowed ;
+        box-shadow: -5px -5px 5px rgb(190, 187, 187, .5);
+        margin: 50px auto;
+
+        height: 300px;
+        overflow:auto;
+     
+        p{
+            font-size: 1.2rem;
+        }
+
+    }
+}
